@@ -8,10 +8,10 @@ function fetchMovie(){
     
     let urlParams = new URLSearchParams(window.location.search);
 
-    let catid =urlParams.get('categories');
+    let tagid =urlParams.get('tags');
     let endpoint = 'http://wilmakorpinen.com/wp00/wp-json/wp/v2/films?_embed&per_page=2&page='+page;
-    if(catid){ // DRY
-     endpoint = "http://wilmakorpinen.com/wp00/wp-json/wp/v2/films?_embed&per_page=2&page="+page+'&categories='+ catid;
+    if(tagid){ // DRY
+     endpoint = "http://wilmakorpinen.com/wp00/wp-json/wp/v2/films?_embed&per_page=2&page="+page+'&tags='+ tagid;
     }
     fetch(endpoint)
     .then(e => e.json())
@@ -19,7 +19,7 @@ function fetchMovie(){
 }
 
 function showMovie(data){
-  console.log(data)
+  //console.log(data)
   lookingForData=false;
   data.forEach(showSingleMovie);
 }

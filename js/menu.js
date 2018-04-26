@@ -21,9 +21,12 @@ window.addEventListener('load',()=>{
         data.forEach(item =>{
             console.log(item);
             let li = document.createElement('li');
-            let a = document.createAttribute('a');
-            a.textContent = item.name;
-            a.href = 'index.html?categories='+ item.id;
+            let a = document.createElement('a');
+            a.textContent = item.tags;
+            if(item.tags === 37){
+                a.textContent = 'drama';
+            }
+            a.href = 'index.html?tags='+ item.tags;
             
             li.appendChild(a);
             parentElement.appendChild(li);
