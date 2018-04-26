@@ -61,7 +61,7 @@ html, body {
     margin-left: 50px;
     width: 60%;
     height: 70%;
-    background-image: url('/images/logo-light-blue.png');
+    background-image: url('../images/logo-light-blue.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -71,7 +71,7 @@ html, body {
    right: 0;
     margin-top: 20px;
     margin-right: 25px;
-    background-image: url(/images/search_icon.svg);
+    background-image: url(../images/search_icon.svg);
     width: 23%;
     height: 50%;
     background-repeat: no-repeat; 
@@ -89,7 +89,7 @@ html, body {
 .title-web{
     margin-top: 80px;
     text-align: center;
-    background-image: url(/images/movie_background_image.svg);
+    background-image: url(../images/movie_background_image.svg);
     background-repeat: no-repeat;
 }
 .title-desc{
@@ -103,7 +103,7 @@ html, body {
 }
 .arrow-down{
     position: relative;
-    background-image: url(/images/arrow-down.png);
+    background-image: url(../images/arrow-down.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
