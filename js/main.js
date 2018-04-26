@@ -35,7 +35,7 @@ function showSingleMovie(aMovie){
       clone.querySelector("img").remove()
   }
 
-  clone.querySelector('.readmore').href = 'subpage.html?id=' + aMovie.id;
+  clone.querySelector('.readmore').href = 'subpages.html?id=' + aMovie.id;
 
   movielist.appendChild(clone);
 }
