@@ -146,11 +146,6 @@ h1{
     color: #1B1862;
 }
 
-img {
-    align-content: center;
-    
-}
-
 .eventimage {
     align-content: center;
 }
@@ -161,7 +156,7 @@ img {
 }
 
 .movie-title{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
 }
 
@@ -169,11 +164,16 @@ img {
     text-align: center;
 }
 
-.container-fluid img:nth-child(odd){
+.movie-event{
+    font-family: Avenir Next, sans-serif;
+    text-align: right;
+}
+
+article:nth-child(odd) img{
   box-shadow: -39px -21px 0px 4px rgba(27,24,98,1);
 }
 
-.container-fluid img:nth-child(even){
+article:nth-child(even) img{
   box-shadow: -39px -21px 0px 4px rgba(213,237,249,1);
 }
 
@@ -185,10 +185,23 @@ img {
 .container-fluid p .readmore{
     text-align: right;
     margin-right: 10px;
+    color: #1B1862; 
+    font-weight: 400;
 }
 
 .movie-event h1{
     padding: 15px;
+}
+
+.movie-event img{
+    display: block;
+    margin-left: 20px;
+}
+
+.movie-event h2{
+    display: inline-block;
+    font-size: 17px;
+    padding-left: 40px;
 }
 
 #singleMovie{
@@ -199,22 +212,46 @@ img {
 
 #singleMovie h1{
   padding-top: 10px; 
+  grid-column: 1/-1;
+    font-size: 30px;
+}
+
+#singleMovie img{
     grid-column: 1/-1;
+   grid-row: 2/3;
+    width: 100%;    
 }
 
-#sinleMovie img{
-
-}
-
-#singleMovie .genre,#singleMovie .price, #singleMovie .date,#singleMovie .location {
-   grid-column: 2/3;
-    font-size: 15px;
-    margin: 0;
+#singleMovie .genre {
+   grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 18px;
     padding: 5px;
+    text-align: center;
 }
 
 #singleMovie .price{
-    text-align: left;    
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+
+#singleMovie .date{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+
+#singleMovie .location{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
 }
 
 #singleMovie .descript{

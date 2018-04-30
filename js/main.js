@@ -28,6 +28,13 @@ function showSingleMovie(aMovie){
   let clone = template.cloneNode(true);
   clone.querySelector("h1").textContent = aMovie.title.rendered;
   clone.querySelector(".price span").textContent=aMovie.acf.price;
+  clone.querySelector(".weekday").textContent = aMovie.acf.weekday;
+
+    let month = aMovie.acf.data.substring(0, 2);
+    var day = aMovie.acf.data.substring(2, 4);
+    var year = aMovie.acf.data.substring(4, 8);
+
+    clone.querySelector(".date").textContent = month + "" + day + "" + year;
 
   if(aMovie._embedded["wp:featuredmedia"]){//img is there
      clone.querySelector("img").setAttribute("src", aMovie._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url)
@@ -56,6 +63,6 @@ function bottomVisible() {
   const scrollY = window.scrollY
   const visible = document.documentElement.clientHeight
   const pageHeight = document.documentElement.scrollHeight
-  const bottomOfPage = visible + scrollY >= pageHeight
+  const bottomOfPage = visible + scrollY >= pageHeight-20
   return bottomOfPage || pageHeight < visible
 }
