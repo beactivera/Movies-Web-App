@@ -20,7 +20,7 @@ html, body {
   position: fixed;
 }    
 .menu {
-  padding: 20px;
+  padding: 40px;
   top: var(--header-height);
   height: 100vh;
   width: 100vw;
@@ -30,12 +30,14 @@ html, body {
   font-family: Avenir Next, sans-serif;
 }
 .menu li{
-    padding: 20px;
+    padding: 10px;
+    margin-left: -10px;
+    padding-left: 0;
      list-style-type: none;
 }
 .menu ul a{
     color: #D5EDF9;
-    font-size: 50px;
+    font-size: 35px;
 }
 .menu.hidden {
   transform: translateX(-100vw);
@@ -65,12 +67,46 @@ html, body {
 .menuIcon rect.rotateDown {
   transform: rotate(45deg) translate(17px, -14px);
 }
+.so-me{
+    position: fixed;
+    top:40px;
+    right: 0;
+    height: 80%;
+    width: 10%;
+}
+.so-me .icon-fb{
+    background-image: url(../images/icons_some_fb_black.svg);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .59;
+}
+.so-me .icon-twitter{
+    background-image: url(../images/icons_some_twitter_black.svg);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .59;
+}
+.so-me .icon-insta{
+    background-image: url('../images/icons_some_insta_black.svg');
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .59;
+}
 .image-header{
     position: absolute;
     top:0;
     margin-top: 10px;
     margin-left: 50px;
-    width: 60%;
+    width: 40%;
     height: 70%;
     background-image: url('../images/logo-light-blue.png');
     background-repeat: no-repeat;
@@ -79,9 +115,9 @@ html, body {
 .image-subpage-header{
    position: absolute;
     top:0;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 60px;
-    width: 60%;
+    width: 36%;
     height: 70%;
     background-image: url('../images/movie-title-light.svg');
     background-repeat: no-repeat;
@@ -91,8 +127,8 @@ html, body {
     position:absolute;
     top:0;
    right: 0;
-    margin-top: 20px;
-    margin-right: 25px;
+    margin-top: 17px;
+    margin-right: 50px;
     background-image: url(../images/search_icon.svg);
     width: 23%;
     height: 50%;
@@ -114,24 +150,22 @@ html, body {
     background-image: url(../images/movie_background_image.svg);
     background-repeat: no-repeat;
 }
+.title-web img{
+    display: block;
+}
 .title-desc{
     padding: 18px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     font-family: Avenir Next, sans-serif;
     background-color: #D5EDF9;
     color: #1B1862;
-    
 }
-.arrow-down{
-    position: relative;
-    background-image: url(/images/arrow_down_blue.svg);
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.title-desc img{
+    margin: 20px;
+    width: 30%;
 }
 h1{
     font-family: Avenir Next, sans-serif;
@@ -188,7 +222,7 @@ article:nth-child(even) img{
 .movie-event h2{
     display: inline-block;
     font-size: 17px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 #singleMovie{
    font-family: Avenir Next, sans-serif;
@@ -235,7 +269,44 @@ article:nth-child(even) img{
 }
 #singleMovie .descript{
     grid-column: 1/-1;
-    font-size: 17px;
+}
+#singleMovie .descript p{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;    
+}
+@media (min-width:450px){
+    .image-header{
+        width: 60%;
+    }
+    .image-subpage-header{
+        margin-top: 10px;
+        width:60%;
+    }
+    .search-header{
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+    .music-event h2{
+        padding-left: 40px;
+    }
+    .menu{
+        padding: 20px;
+    }
+    .menu li{
+        padding: 20px;
+        margin-left: 0;
+    }
+    .menu ul a{
+        font-size: 50px;
+    }
+    .title-desc{
+        font-size:17px;
+    }
+    #singleMusic .descript{
+        font-size:17px;
+        padding: 0;
+    }
 }
 @media (min-width: 1000px)  {
   #movieist {
