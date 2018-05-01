@@ -26,6 +26,11 @@ window.addEventListener('load', () => {
             a.textContent = item.name;
 
             a.href = 'index.html?categories=' + item.id;
+                //  remove description from frontpage when you click on particular category
+//            document.querySelector('.title-web').style.display = 'none';
+//            document.querySelector('.title-desc').style.display = 'none';
+//            document.querySelector('.container-fluid').style.marginTop = '25px';
+            }=
             li.appendChild(a);
             parentElement.appendChild(li);
             }
