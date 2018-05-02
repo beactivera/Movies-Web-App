@@ -104,7 +104,7 @@ html, body {
 .image-header{
     position: absolute;
     top:0;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 50px;
     width: 40%;
     height: 70%;
@@ -128,9 +128,9 @@ html, body {
     top:0;
    right: 0;
     margin-top: 17px;
-    margin-right: 50px;
+    margin-right: 70px;
     background-image: url(../images/search_icon.svg);
-    width: 23%;
+    width: 15%;
     height: 50%;
     background-repeat: no-repeat; 
 }
@@ -140,7 +140,7 @@ html, body {
     right: 0;
     margin-top: 25px;
     margin-right: 25px;
-    font-size: 20px;
+    font-size: 18px;
     color: #D5EDF9;
     font-family: Avenir Next, sans-serif;
 }
@@ -154,7 +154,7 @@ html, body {
     display: block;
 }
 .title-desc{
-    padding: 18px;
+    padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
@@ -164,7 +164,7 @@ html, body {
     color: #1B1862;
 }
 .title-desc img{
-    margin: 20px;
+    margin-top: 10px;
     width: 30%;
 }
 h1{
@@ -277,15 +277,19 @@ article:nth-child(even) img{
 }
 @media (min-width:450px){
     .image-header{
-        width: 60%;
+        width: 50%;
     }
     .image-subpage-header{
         margin-top: 10px;
         width:60%;
     }
     .search-header{
-        margin-right: 25px;
+        margin-right: 70px;
         margin-top: 20px;
+    }
+    .log-header{
+        margin-top: 30px;
+        margin-right: 30px;
     }
     .music-event h2{
         padding-left: 40px;
