@@ -27,10 +27,6 @@ window.addEventListener('load', () => {
 
             a.href = 'categories.html?categories=' + item.id;
             document.querySelector('.container-fluid').style.marginTop = '40px';
-                //  remove description from frontpage when you click on particular category
-//            document.querySelector('.title-web').style.display = 'none';
-//            document.querySelector('.title-desc').style.display = 'none';
-//            document.querySelector('.container-fluid').style.marginTop = '25px';
             li.appendChild(a);
             parentElement.appendChild(li);
             }
