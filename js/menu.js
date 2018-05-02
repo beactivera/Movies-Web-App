@@ -25,7 +25,8 @@ window.addEventListener('load', () => {
             if(item.parent == 22){
             a.textContent = item.name;
 
-            a.href = 'index.html?categories=' + item.id;
+            a.href = 'categories.html?categories=' + item.id;
+            document.querySelector('.container-fluid').style.marginTop = '40px';
                 //  remove description from frontpage when you click on particular category
 //            document.querySelector('.title-web').style.display = 'none';
 //            document.querySelector('.title-desc').style.display = 'none';
