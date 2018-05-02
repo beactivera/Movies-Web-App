@@ -14,4 +14,7 @@ function showSinglePost(aPost){
     document.querySelector('#singleMovie .date').textContent = aPost.acf.data;
     document.querySelector('#singleMovie .location').textContent = aPost.acf.location;
     document.querySelector('#singleMovie .descript').innerHTML = aPost.content.rendered;
+    if(aPost.acf.price >0){
+        document.querySelector('#singleMovie .buy').style.display = "block";
+    }
 }
