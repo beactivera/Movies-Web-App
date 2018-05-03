@@ -145,16 +145,19 @@ html, body {
     font-family: Avenir Next, sans-serif;
 }
 .title-web{
+    width: 100%;
     margin-top: 80px;
-    text-align: center;
-    background-image: url(../images/movie_background_image.svg);
-    background-repeat: no-repeat;
-}
-.title-web img{
-    display: block;
 }
 .title-desc{
-    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    font-size: 40px;
+    font-family: Avenir Next, sans-serif;
+    color: #1B1862;
+}
+.small-desc{
+    padding: 18px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
@@ -163,7 +166,7 @@ html, body {
     background-color: #D5EDF9;
     color: #1B1862;
 }
-.title-desc img{
+.small-desc img{
     margin-top: 10px;
     width: 30%;
 }
