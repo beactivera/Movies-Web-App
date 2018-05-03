@@ -275,6 +275,9 @@ article:nth-child(even) img{
     padding-left: 15px;
     padding-right: 15px;    
 }
+#singleMovie .descript p .embed-youtube .youtube-player{
+    width: 100%;
+}
 #singleMovie .buy{
     display: none;
     grid-column: 1/-1;
